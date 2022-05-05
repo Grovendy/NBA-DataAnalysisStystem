@@ -410,7 +410,7 @@ name = Yao Ming & season = 08-09 & regular = 0 & total = 1 & pergame = 0 & advan
 |college|大学|String|\|
 |draft|选秀|String|\|
 |debut|初次登场|String|\|
-|exp|球龄，-1表示已退役|String|1|
+|exp|球龄，-1表示已退役|String|-1|
 |number|球衣号|String|11|
 
 * total/pergame
