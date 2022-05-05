@@ -63,6 +63,8 @@ NBA数据分析系统对外提供的API包括球队、球员和比赛的信息�
 返回值是一个JSONObject，内含abbr、info、total、pergame、advanced、opptotal、opppergame键，它们的值各自是一个JSONObject。其中total、pergame、advanced、opptotal、opppergame的JSONObject含有一个或多个名为相应赛季的键，它们的值也各自是一个JSONObject。
 
 #### 返回值示例
+abbr = HOU & season = 21-22 & total = 1 & pergame = 0 & advanced = 0 & opptotal = 0 & opppergame = 0
+
 ``` java
 {
 	"total":
@@ -255,6 +257,7 @@ championships|球队获得季后赛总冠军的次数|Integer|2|
 返回值是一个JSONArray，JSONArray的每一个元素是一个球员的名字。
 
 #### 返回值示例
+initial=X
 ```java
 "Xavier Henry",
 "Xavier Silas"
@@ -332,6 +335,8 @@ team = HOU & season = 21-22
 返回值是一个JSONObject，内含name、info、total、pergame、advanced、salary键，它们的值各自是一个JSONObject。其中total、pergame、advanced、salary的JSONObject含有一个或多个名为相应赛季的键，它们的值也各自是一个JSONObject。
 
 #### 返回值示例
+name = Yao Ming & season = 08-09 & regular = 0 & total = 1 & pergame = 0 & advanced = 0 & salary = 1
+
 ```java
 "name":"Yao Ming",
 	"total_regular":{
