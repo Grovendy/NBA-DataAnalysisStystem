@@ -473,3 +473,268 @@ name = Yao Ming & season = 08-09 & regular = 0 & total = 1 & pergame = 0 & advan
 |dbpm|defensive box plus/minus|Double|
 |bpm|box plus/minus|Double|
 |vorp|value over replacement player|Double|
+
+## Match
+
+### 1.根据起始日期和截止日期查询比赛
+
+#### 功能
+根据指定的起始日期和截止日期查询比赛日期在选定区间内的比赛编号ID。
+
+#### API参数解释
+|参数|解释|
+|:---:|---|
+|begin|起始日期，必选参数，日期格式必须如同2021-12-01|
+|end|截止日期，必选参数，日期格式必须如同2021-12-05|
+>注：如果截止日期小于起始日期，则返回为空的JSONArray。
+
+#### 返回值格式
+返回值是一个JSONArray，JSONArray的每一个元素是一场比赛的编号ID。
+
+#### 返回值示例
+begin=2022-01-01&end=2022-01-02
+```java
+[
+	"202201010CHI-DEN",
+	"202201010MIN-SAC",
+	"202201020PHO-PHI",
+	"202201020ORL-BRK",
+	"202201020OKC-WAS",
+	"202201020NYK-DET",
+	"202201020NOP-HOU",
+	"202201020MIL-IND",
+	"202201020LAL-MEM",
+	"202201020GSW-TOR",
+	"202201020CHO-CLE",
+	"202201020BOS-DAL",
+	"202201020UTA-ATL"
+]
+```
+
+### 2.根据赛季查询本赛季的比赛
+
+#### 功能
+根据赛季查询本赛季的比赛/常规赛/季后赛，并且可以规定数量，根据日期排序。
+
+#### API参数解释
+|参数|解释|
+|:---:|---|
+|season|赛季，必选参数，指定查询比赛的赛季，赛季格式必须如同21-22|
+|regular|常规赛/季后赛，可选参数，参数值为0或1，如无次参数则表示查询所有比赛，0则查询季后赛，1则查询常规赛|
+|limit|数量限制，可选参数，数据类型是Integer|
+|regular|按照日期正序/逆序，可选参数，参数值为0或1，无此参数时默认为0。值为0时，按日期正序排列，为1时按日期逆序排列|
+
+#### 返回值格式
+返回值是一个JSONArray，JSONArray的每一个元素是一场比赛的编号ID。
+
+#### 返回值示例
+season=21-22&regular=0&limit=5&desc=0
+```java
+[
+	"202204190LAC-GSW",
+	"202204190OKC-MEM",
+	"202204190IND-ATL",
+	"202204190TOR-BRK",
+	"202204200MIA-CHA"
+]
+```
+
+### 3.根据赛季和球队查询相关比赛
+
+#### 功能
+根据赛季和球队查询本赛季该球队的比赛/常规赛/季后赛，并且可以规定数量，根据日期排序。
+
+#### API参数解释
+|参数|解释|
+|:---:|---|
+|season|赛季，必选参数，指定查询比赛的赛季，赛季格式必须如同21-22|
+|team|球队缩写，必选参数，目的在于获取该球队参与的比赛|
+|regular|常规赛/季后赛，可选参数，参数值为0或1，如无次参数则表示查询所有比赛，0则查询季后赛，1则查询常规赛|
+|home|主场/客场，可选参数，参数值为0或1，如无次参数则表示查询所有比赛，0则查询客场比赛，1则查询主场比赛|
+|limit|数量限制，可选参数，数据类型是Integer|
+|desc|按照日期正序/逆序，可选参数，参数值为0或1，无此参数时默认为0。值为0时，按日期正序排列，为1时按日期逆序排列|
+
+#### 返回值格式
+返回值是一个JSONArray，JSONArray的每一个元素是一场比赛的编号ID。
+
+#### 返回值示例
+season=21-22&team=HOU&regular=1&limit=5&desc=1
+```java
+[
+	"202204150HOU-UTA",
+	"202204130CHO-HOU",
+	"202204120HOU-NOP",
+	"202204100HOU-SAS",
+	"202204080SAS-HOU"
+]
+```
+
+### 4.根据赛季和球员查询相关比赛
+
+#### 功能
+根据赛季和球员查询本赛季该球员的比赛/常规赛/季后赛，并且可以规定数量，根据日期排序。
+
+#### API参数解释
+|参数|解释|
+|:---:|---|
+|season|赛季，必选参数，指定查询比赛的赛季，赛季格式必须如同21-22|
+|player|球员名字，必选参数，目的在于获取该球员参与的比赛|
+|regular|常规赛/季后赛，可选参数，参数值为0或1，如无次参数则表示查询所有比赛，0则查询季后赛，1则查询常规赛|
+|limit|数量限制，可选参数，数据类型是Integer|
+|desc|按照日期正序/逆序，可选参数，参数值为0或1，无此参数时默认为0。值为0时，按日期正序排列，为1时按日期逆序排列|
+
+#### 返回值格式
+返回值是一个JSONArray，JSONArray的每一个元素是一场比赛的编号ID。
+
+#### 返回值示例
+season=08-09&player=Yao%20Ming&regular=1&limit=5&desc=1
+```java
+[
+	"200904150DAL-HOU",
+	"200904130HOU-NOH",
+	"200904090SAC-HOU",
+	"200904070HOU-ORL",
+	"200904050HOU-POR"
+]
+```
+
+### 5.查询某场比赛的信息和数据
+
+#### 功能
+查询某场比赛的信息和数据，可根据比赛编号ID来查询比赛信息、比赛得分、球员基础数据和球员高阶数据。
+
+#### API参数解释
+|参数|解释|
+|:---:|---|
+|id|比赛编号ID，必选参数，指定要查询的比赛，ID可从上面的API中获取|
+|basic|球员基础数据，可选参数，参数值为0或1，无此参数时默认为0，0表示不查询球员基础数据，1表示查询|
+|advanced|球员高阶数据，可选参数，参数值为0或1，无此参数时默认为0，0表示不查询球员高阶数据，1表示查询|
+
+#### 返回值格式
+返回值是一个JSONObject，内含game_id、info、scores、basic、advanced键，它们的值各自是一个JSONObject。其中scores含有两个名各自为主队和客队缩写的键，它们的值分别为主队和客队得分的JSONArray。basic和advanced的JSONObject含有两个名各自为主队和客队缩写的键，它们的值也是一个JSONArray，JSONArray含多个JSONObject。
+
+#### 返回值示例
+id=202112280LAL-HOU&basic=1&advanced=0
+```java
+{
+	"scores":{
+		"LAL":[19,26,24,21,90],
+		"HOU":[31,31,23,23,108]
+	},
+	"basic":{
+		"LAL":[
+			{
+				"fga_pct":0.2,
+				"fg3a":1,
+				"blk":0,
+				"fg":1,
+				"fga":5,
+				"ast":6,
+				"starter":"Starter",
+				"trb":2,
+				"ft_pct":0.833,
+				"fg3_pct":0,
+				"ft":5,
+				"pts":7,
+				"minute":29.133333333333333,
+				"plus_minus":-16,
+				"fta":6,
+				"fg3":0,
+				"drb":1,
+				"pf":3,
+				"tov":4,
+				"player_name":"Jeremy Lin",
+				"orb":1
+			}
+			...
+		],"HOU":[
+			...
+		]
+	},
+	"info":{
+		"date":"2021-12-28",
+		"guest_point":108,
+		"home_point":90,
+		"is_normal":true,
+		"season":"21-22",
+		"location":"STAPLES Center, Los Angeles, California",
+		"time":"2:46",
+		"home_team":"LAL",
+		"guest_team":"HOU"
+	},
+	"game_id":"202112280LAL-HOU"
+}
+```
+
+#### 返回值解释
+
+* info
+
+| 键 | 含义 | 数据类型 | 示例 |
+|:----:|:----:|:----:|:----:|
+|gameid|比赛编号|String|123|
+|season|赛季|String|21-22|
+|date|比赛日期|String|2021-11-28|
+|is_normal|常规赛还是季后赛|Boolean|true/false|
+|location|比赛地点（场馆,城市,地区）|String|LA|
+|home_team|主队缩写|String|HOU|
+|guest_team|客队缩写|String|LAL|
+|home_point|主队总得分|Integer|110|
+|guest_point|客队总得分|Integer|121|
+|time|比赛时长(时:分)|String|2:46|
+
+* basis
+
+| 键 | 含义 | 数据类型 |
+|:----:|:----:|:----:|
+|player_name|球员名字|String|
+|starter|首发，TeamTotal球队总数据，Starter首发球员，Reserve是非首发上场，DidNotPlayer冷板凳|String|
+|minute|在场时间|Double|
+|fg|投篮命中数|Integer/Double|
+|fga|投篮出手数|Integer/Double|
+|fga_pct|投篮命中率|Double|
+|fg3|三分命中数|Integer/Double|
+|fg3a|三分出手数|Integer/Double|
+|fg3_pct|三分命中率|Double|
+|ft|罚球命中数|Integer/Double|
+|fta|罚球出手数|Integer/Double|
+|ft_pct|罚球命中率|Double|
+|orb|进攻篮板数|Integer/Double|
+|drb|防守篮板数|Integer/Double|
+|trb|总篮板数|Integer/Double|
+|ast|助攻数|Integer/Double|
+|stl|抢断数|Integer/Double|
+|blk|盖帽数|Integer/Double|
+|tov|失误数|Integer/Double|
+|pf|犯规数|Integer/Double|
+|pts|个人得分|Integer/Double|
+|plus_minus|+/-|Double|
+
+* advance
+
+| 键 | 含义 | 数据类型 |
+|:----:|:----:|:----:|
+|player_name|球员名字|String|
+|starter|首发，TeamTotal球队总数据，Starter首发球员，Reserve是非首发上场，DidNotPlayer冷板凳|String|
+|minute|在场时间|Double|
+|efg_pct|effective field goal percentage|Double|
+|ts_pct|true shooting percentage|Double|
+|fa3a_per_fga_pct|3-point attempt rate|Double|
+|fta_per_fga_pct|free throw attempt rate|Double|
+|orb_pct|进攻篮板率|Double|
+|drb_pct|防守篮板率|Double|
+|trb_pct|总篮板率|Double|
+|ast_pct|助攻率|Double|
+|stl_pct|抢断率|Double|
+|blk_pct|盖帽率|Double|
+|tov_pct|失误率|Double|
+|usg_pct|使用率|Double|
+|off_rtg|进攻效率|Double|
+|def_rtg|防守效率|Double|
+
+## 通用返回值
+|返回字符串|字符串解释|
+|:---:|---|
+|Not support|不支持当前的Get请求，请确认是否使用上述正确的API请求|
+|Not found|数据库中检索不到当前所查询的数据，请确认API请求|
+|Error|服务器发生错误，请联系|
