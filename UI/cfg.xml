@@ -1,0 +1,1739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nba>
+	<!-- home frame -->
+	<homeframe width="1024" height="680" windowUp="20">
+
+		<panel className="ui.home.HomePanel" width="1024" height="680"
+			x="0" y="0" bg="img/home/background.jpg">
+
+			<tablepane className="ui.home.TestTablePane" width="1000"
+				height="500" x="0" y="0">
+				<columnnames>
+					<columnname name="球员名称" />
+					<columnname name="所属球队" />
+					<columnname name="参赛场数" />
+				</columnnames>
+			</tablepane>
+			<buttons>
+		   		<exit path="img/home/btn/exit.png"  w="20" h="20" x="15" y="5" />
+			 	<min path="img/home/btn/min.png"  w="20" h="20" x="45" y="5" />
+			 	<max path="img/home/btn/max.png"  w="20" h="20" x="77" y="5" />
+			 	
+			 	<player path="img/home/func/player.jpg"  w="210" h="317" x="92" y="363" />
+			 	<team path="img/home/func/team.jpg"  w="210" h="317" x="302" y="363" />
+			 	<match path="img/home/func/match.jpg"  w="210" h="317" x="512" y="363" />
+			 	<stats path="img/home/func/stats.jpg"  w="210" h="317" x="722" y="363" />
+			
+			</buttons>
+		</panel>
+		
+		<panel className="ui.common.Dropdownmenu" width="150" height="240" 
+			x="826" y="118">
+		
+		<buttons>
+		<player w="150" h="43" x="0" y="18" path="img/common/dropdownmenu/player.png"/>
+		<team w="150" h="43" x="0" y="61" path="img/common/dropdownmenu/team.png"/>
+		<match w="150" h="43" x="0" y="104" path="img/common/dropdownmenu/match.png"/>
+		<stats w="150" h="43" x="0" y="147" path="img/common/dropdownmenu/stats.png"/>
+		<home w="150" h="43" x="0" y="190" path="img/common/dropdownmenu/home.png"/>
+		</buttons>
+		
+		<labels>
+		<bg w="150" h="240" x="0" y="0" path="img/common/dropdownmenu/dropdownmenu.png"/>
+		</labels>
+		
+		</panel>
+		
+		<panel className="ui.common.MotherPanel" width="1024" height="680"
+			x="0" y="0" bg="img/common/background.jpg">
+			
+			<buttons>
+			<back path = "img/common/btn/back.png" w="70" h="60" x="36" y="45" />	
+			<menu path = "img/common/btn/dropdownmenu_1.png" w="70" h="60" x="906" y="45" />
+			<exit path="img/home/btn/exit.png"  w="20" h="20" x="15" y="5" />
+			 	<min path="img/home/btn/min.png"  w="20" h="20" x="45" y="5" />
+			 	<max path="img/home/btn/max.png"  w="20" h="20" x="77" y="5" />
+			 			
+			</buttons>
+			
+			<subpane>			
+				<sub1 className="ui.home.HomePanel" width="50" height="50"
+					x="0" y="0" bg="img/home/background.jpg">
+				</sub1>
+			</subpane>
+					
+		</panel>
+		
+		
+		<panel className="ui.player.PlayerPanel" width="940" height="511"
+			x="37" y="148" >
+			
+			
+			
+			<buttons>
+			<setting w="53" h="46" x="888" y="0" path="img/common/btn/setting.png"/>
+			<menu w="52" h="46" x="0" y="0" path="img/common/btn/dropdownmenu2.png"/>
+			</buttons>
+
+			<labels>
+			<settingbg w="940" h="50" x="0" y="0" path="img/player/setting/bg.png" />
+			</labels>
+						
+			</panel>
+			
+			<!-- 球员索引界面 --> 
+			<panel className="ui.player.index.PlayerIndex" width="940" height="511"
+			x="0" y="0">
+			<textfields>
+			<name w="150" h="25" x="21" y="13" />
+			</textfields>
+			<labels>
+			<indexbg w="940" h="50" x="0" y="0" path="img/player/index/indexbg.png" />
+			<search w="180" h="28" x="20" y="12" path="img/common/search/search.png"/>		
+			<a w="28" h="45" x="209" y="2" path="img/player/index/a.png" />
+			<b w="28" h="45" x="237" y="2" path="img/player/index/b.png" />
+			<c w="28" h="45" x="265" y="2" path="img/player/index/c.png" />
+			<d w="28" h="45" x="293" y="2" path="img/player/index/d.png" />
+			<e w="28" h="45" x="321" y="2" path="img/player/index/e.png" />
+			<f w="28" h="45" x="349" y="2" path="img/player/index/f.png" />
+			<g w="28" h="45" x="377" y="2" path="img/player/index/g.png" />
+			<h w="28" h="45" x="405" y="2" path="img/player/index/h.png" />
+			<i w="28" h="45" x="433" y="2" path="img/player/index/i.png" />
+			<j w="28" h="45" x="461" y="2" path="img/player/index/j.png" />
+			<k w="28" h="45" x="489" y="2" path="img/player/index/k.png" />
+			<l w="28" h="45" x="517" y="2" path="img/player/index/l.png" />
+			<m w="28" h="45" x="545" y="2" path="img/player/index/m.png" />
+			<n w="28" h="45" x="573" y="2" path="img/player/index/n.png" />
+			<o w="28" h="45" x="601" y="2" path="img/player/index/o.png" />
+			<p w="28" h="45" x="629" y="2" path="img/player/index/p.png" />
+			<q w="28" h="45" x="657" y="2" path="img/player/index/q.png" />
+			<r w="28" h="45" x="685" y="2" path="img/player/index/r.png" />
+			<s w="28" h="45" x="713" y="2" path="img/player/index/s.png" />
+			<t w="28" h="45" x="741" y="2" path="img/player/index/t.png" />
+			<u w="28" h="45" x="769" y="2" path="img/player/index/u.png" />
+			<v w="28" h="45" x="797" y="2" path="img/player/index/v.png" />
+			<w w="28" h="45" x="825" y="2" path="img/player/index/w.png" />
+			<x w="28" h="45" x="853" y="2" path="img/player/index/x.png" />
+			<y w="28" h="45" x="881" y="2" path="img/player/index/y.png" />
+			<z w="28" h="45" x="909" y="2" path="img/player/index/z.png" />
+			
+			<left  text="Bogdanovic Bojan" w="200" h="45" x="40" y="0" />
+			<middle1  text="Bogdanovic Bojan" w="200" h="45" x="280" y="0" />
+			<middle2  text="Bogdanovic Bojan" w="200" h="45" x="520" y="0" />
+			<right  text="Bogdanovic Bojan" w="200" h="45" x="740" y="0" />
+			
+			</labels>
+			</panel>
+			
+			<panel className="ui.player.stat.PlayerStat" width="940" height="511"
+			x="0" y="0" >
+			<tablepane className="ui.player.stat.PlayerAllTablePane" width="900"
+				height="420" x="20" y="75">
+				<columnnames>
+					<columnname name="NAME" />
+					<columnname name="TEAM" />
+					<columnname name="G" />
+					<columnname name="GS" />
+					<columnname name="MIN" />
+					<columnname name="FG" />					
+					<columnname name="FGA%" />
+					<columnname name="FG3" />					
+					<columnname name="FG3%" />
+					<columnname name="FG2" />					
+					<columnname name="FG2%" />
+					<columnname name="EFG%" />
+					<columnname name="FT" />
+					<columnname name="FT%" />
+					<columnname name="TRB" />
+					<columnname name="AST" />
+					<columnname name="STL" />
+					<columnname name="BLK" />
+					<columnname name="TOV" />
+					<columnname name="PF" />
+					<columnname name="PTS" />
+				</columnnames>
+			</tablepane>
+			<tab>
+			<stat w1="67" h1="30" w2="67" h2="30" x="794" y="58" 
+			      path1="img/common/tab/avg.jpg" 
+			      path2="img/common/tab/all.jpg"/>
+			</tab>
+			</panel>
+			
+			<panel className="ui.team.TeamNav" width="770" 
+			height="60" x="106" y="45" bg="img/common/nav/navbg.jpg" >
+			
+			<labels>
+			<index  w="103" h="60" x="0" y="0" path="img/team/nav/index.png"/>
+			<teamstat  w="103" h="60" x="104" y="0" path="img/team/nav/stat.png"/>
+			<hotteam  w="103" h="60" x="208" y="0" path="img/team/nav/hotteam.png"/>
+			<compare  w="103" h="60" x="312" y="0" path="img/team/nav/compare.png"/>
+			</labels>
+			
+			</panel>
+			
+			<panel className="ui.team.TeamPanel" width="940" height="511"
+			x="37" y="148" >
+			
+			</panel>
+			
+			<panel className="ui.team.TeamIndex" width="940" height="511"
+			x="0" y="0" bg="img/team/teambg.png">
+			<buttons>
+			<hou w="150" h="70" x="140" y="15" path="img/team/index/HOU.jpg"/>
+			<mem w="150" h="70" x="300" y="15" path="img/team/index/MEM.jpg" />
+			<sas w="150" h="70" x="460" y="15" path="img/team/index/SAS.jpg" />
+			<dal w="150" h="70" x="620" y="15" path="img/team/index/DAL.jpg" />
+			<nop w="150" h="70" x="780" y="15" path="img/team/index/NOP.jpg" />
+			
+			<gsw w="150" h="70" x="140" y="95" path="img/team/index/GSW.jpg" />
+			<lac w="150" h="70" x="300" y="95" path="img/team/index/LAC.jpg" />
+			<phx w="150" h="70" x="460" y="95" path="img/team/index/PHX.jpg" />
+			<sac w="150" h="70" x="620" y="95" path="img/team/index/SAC.jpg" />
+			<lal w="150" h="70" x="780" y="95" path="img/team/index/LAL.jpg" />
+			
+			<por w="150" h="70" x="140" y="175" path="img/team/index/POR.jpg" />
+			<okc w="150" h="70" x="300" y="175" path="img/team/index/OKC.jpg" />
+			<uta w="150" h="70" x="460" y="175" path="img/team/index/UTA.jpg" />
+			<den w="150" h="70" x="620" y="175" path="img/team/index/DEN.jpg" />
+			<min w="150" h="70" x="780" y="175" path="img/team/index/MIN.jpg" />
+			
+			<tor w="150" h="70" x="140" y="270" path="img/team/index/TOR.jpg" />
+			<bos w="150" h="70" x="300" y="270" path="img/team/index/BOS.jpg" />
+			<bkn w="150" h="70" x="460" y="270" path="img/team/index/BKN.jpg" />
+			<phi w="150" h="70" x="620" y="270" path="img/team/index/PHI.jpg" />
+			<nyk w="150" h="70" x="780" y="270" path="img/team/index/NYK.jpg" />
+			
+			<atl w="150" h="70" x="140" y="350" path="img/team/index/ATL.jpg" />
+			<was w="150" h="70" x="300" y="350" path="img/team/index/WAS.jpg" />
+			<mia w="150" h="70" x="460" y="350" path="img/team/index/MIA.jpg" />
+			<cha w="150" h="70" x="620" y="350" path="img/team/index/CHA.jpg" />
+			<orl w="150" h="70" x="780" y="350" path="img/team/index/ORL.jpg" />
+			
+			<cle w="150" h="70" x="140" y="430" path="img/team/index/CLE.jpg" />
+			<chi w="150" h="70" x="300" y="430" path="img/team/index/CHI.jpg" />
+			<mil w="150" h="70" x="460" y="430" path="img/team/index/MIL.jpg" />
+			<ind w="150" h="70" x="620" y="430" path="img/team/index/IND.jpg" />
+			<det w="150" h="70" x="780" y="430" path="img/team/index/DET.jpg" />
+			
+			</buttons>
+			</panel>
+			
+			<panel className="ui.team.TeamDetail" width="940" height="511"
+			x="0" y="0" bg="img/team/teamdetail.png">
+			
+			<labels>
+			<info w="150" h="46" x="0" y="0" path="img/team/label/info.png"/>
+			<player w="150" h="46" x="150" y="0" path="img/team/label/player.png"/>
+			<labelbg w="940" h="50" x="0" y="0" path="img/player/setting/bg.png" />
+			
+			<team w="250" h="30" x="55" y="30" />
+			<logo w="100" h="100" x="40" y="90"/>
+			<buildtime w="100" h="30" x="160" y="90"/>
+			<location w="260" h="30" x="160" y="110"/>
+			<league w="100" h="30" x="160" y="130"/>
+			<division w="100" h="30" x="160" y="150"/>
+			<championship w="100" h="30" x="160" y="170"/>
+			
+			<current w="200" h="30" x="450" y="50" />
+			
+			<more w="200" h="30" x="800" y="450"/>
+			
+			<chart1 w="273" h="205" x="425" y="70"/>
+			<chart2  w="350" h="205" x="425" y="285"/>
+			</labels>
+			
+			<tablepane className="ui.team.TeamGeneralTablePane" width="300"
+				height="160" x="10" y="250">
+				<columnnames>
+					<columnname name="技术统计" />
+					<columnname name="场均" />
+					<columnname name="总数" />
+				</columnnames>
+			</tablepane>
+			
+			<comboboxes>
+				<cdt w="110" h="25" x="180" y="220">
+					<string str="PTS" />
+					<string str="AST" />
+					<string str="BLK" />
+					<string str="STL" />
+					<string str="TRB" />
+					<string str="DRB" />
+					<string str="ORB" />
+					<string str="TOV" />
+					<string str="PF" />
+					<string str="FG3_PCT" />
+					<string str="FGA_PCT" />
+					<string str="FT_PCT" />
+					
+					
+				</cdt>
+				</comboboxes>
+			</panel>
+			
+			<panel className="ui.team.advance.TeamMore" width="940" height="511"
+			x="0" y="0" bg="img/common/blankbg.png">
+			
+			<tablepane>
+			<table1 className="ui.team.advance.TBYTablePane" width="903"
+				height="420" x="20" y="75">
+				<columnnames>
+					<columnname name="Season" />
+					<columnname name="G" />
+					<columnname name="MP" />
+					<columnname name="FG" />
+					<columnname name="FGA" />
+					<columnname name="FG%" />
+					<columnname name="3P" />
+					<columnname name="3PA" />
+					<columnname name="3P%" />
+					<columnname name="2P" />
+					<columnname name="2PA" />
+					<columnname name="2P%" />
+					<columnname name="FT" />
+					<columnname name="FTA" />
+					<columnname name="FT%" />
+					<columnname name="ORB" />
+					<columnname name="DRB" />
+					<columnname name="TRB" />
+					<columnname name="AST" />
+					<columnname name="STL" />
+					<columnname name="BLK" />
+					<columnname name="TOV" />
+					<columnname name="PF" />
+					<columnname name="PTS" />
+				</columnnames>
+			</table1>
+			
+			<table2 className="ui.team.advance.PGBYTablePane" width="881"
+				height="420" x="20" y="75">
+				<columnnames>
+					<columnname name="Season" />
+					<columnname name="MP" />
+					<columnname name="FG" />
+					<columnname name="FGA" />
+					<columnname name="FG%" />
+					<columnname name="3P" />
+					<columnname name="3PA" />
+					<columnname name="3P%" />
+					<columnname name="2P" />
+					<columnname name="2PA" />
+					<columnname name="2P%" />
+					<columnname name="FT" />
+					<columnname name="FTA" />
+					<columnname name="FT%" />
+					<columnname name="ORB" />
+					<columnname name="DRB" />
+					<columnname name="TRB" />
+					<columnname name="AST" />
+					<columnname name="STL" />
+					<columnname name="BLK" />
+					<columnname name="TOV" />
+					<columnname name="PF" />
+					<columnname name="PTS" />
+				</columnnames>
+			</table2>
+			
+			<table3 className="ui.team.advance.OppTotalTablePane" width="877"
+				height="420" x="20" y="75">
+				<columnnames>
+					<columnname name="Season" />
+					<columnname name="MP" />
+					<columnname name="FG" />
+					<columnname name="FGA" />
+					<columnname name="FG%" />
+					<columnname name="3P" />
+					<columnname name="3PA" />
+					<columnname name="3P%" />
+					<columnname name="2P" />
+					<columnname name="2PA" />
+					<columnname name="2P%" />
+					<columnname name="FT" />
+					<columnname name="FTA" />
+					<columnname name="FT%" />
+					<columnname name="ORB" />
+					<columnname name="DRB" />
+					<columnname name="TRB" />
+					<columnname name="AST" />
+					<columnname name="STL" />
+					<columnname name="BLK" />
+					<columnname name="TOV" />
+					<columnname name="PF" />
+					<columnname name="PTS" />
+				</columnnames>
+			</table3>
+			
+			<table4 className="ui.team.advance.PGBYTablePane" width="881"
+				height="420" x="20" y="75">
+				<columnnames>
+					<columnname name="Season" />
+					<columnname name="MP" />
+					<columnname name="FG" />
+					<columnname name="FGA" />
+					<columnname name="FG%" />
+					<columnname name="3P" />
+					<columnname name="3PA" />
+					<columnname name="3P%" />
+					<columnname name="2P" />
+					<columnname name="2PA" />
+					<columnname name="2P%" />
+					<columnname name="FT" />
+					<columnname name="FTA" />
+					<columnname name="FT%" />
+					<columnname name="ORB" />
+					<columnname name="DRB" />
+					<columnname name="TRB" />
+					<columnname name="AST" />
+					<columnname name="STL" />
+					<columnname name="BLK" />
+					<columnname name="TOV" />
+					<columnname name="PF" />
+					<columnname name="PTS" />
+				</columnnames>
+			</table4>
+			</tablepane>
+			
+			<labels>
+			<logo w="60" h="60" x="20" y="10"/>
+			<team w="50" h="30" x="105" y="28"/>
+			<total w="110" h="30" x="180" y="28"/>
+			<pergame w="130" h="30" x="275" y="28"/>
+			<opptotal w="180" h="30" x="415" y="28"/>
+			<opppergame w="200" h="30" x="595" y="28"/>
+			</labels>
+			</panel>
+			
+			<panel className="ui.team.advance.SeasonDetail" width="940" height="511"
+			x="0" y="0" bg="img/team/tablebg.png">
+			<labels>
+			<hint1 w="300" h="30" x="35" y="23" />
+			<hint2 w="300" h="30" x="35" y="235" />
+			</labels>
+			<tablepane>
+			<table1 className="ui.team.advance.OppStatTablePane" width="911"
+				height="138" x="16" y="48">
+			<columnnames>
+					<columnname name="Role" />
+					<columnname name="G" />
+					<columnname name="MP" />
+					<columnname name="FG" />
+					<columnname name="FGA" />
+					<columnname name="FG%" />
+					<columnname name="3P" />
+					<columnname name="3PA" />
+					<columnname name="3P%" />
+					<columnname name="2P" />
+					<columnname name="2PA" />
+					<columnname name="2P%" />
+					<columnname name="FT" />
+					<columnname name="FTA" />
+					<columnname name="FT%" />
+					<columnname name="ORB" />
+					<columnname name="DRB" />
+					<columnname name="TRB" />
+					<columnname name="AST" />
+					<columnname name="STL" />
+					<columnname name="BLK" />
+					<columnname name="TOV" />
+					<columnname name="PF" />
+					<columnname name="PTS" />
+				</columnnames>
+				</table1>
+				
+				<table2 className="ui.team.advance.SeasonPlayerTablePane" width="911"
+				height="220" x="16" y="260">
+			<columnnames>
+					<columnname name="Player" />
+					<columnname name="G" />
+					<columnname name="GS" />
+					<columnname name="MP" />
+					<columnname name="FG" />
+					<columnname name="FGA" />
+					<columnname name="FG%" />
+					<columnname name="3P" />
+					<columnname name="3PA" />
+					<columnname name="3P%" />
+					<columnname name="FT" />
+					<columnname name="FTA" />
+					<columnname name="FT%" />
+					<columnname name="ORB" />
+					<columnname name="DRB" />
+					<columnname name="TRB" />
+					<columnname name="AST" />
+					<columnname name="STL" />
+					<columnname name="BLK" />
+					<columnname name="TOV" />
+					<columnname name="PF" />
+					<columnname name="PTS" />
+				</columnnames>
+				</table2>
+				
+				</tablepane>
+			</panel>
+			
+			<panel className="ui.team.TeamStat" width="940" height="511"
+			x="0" y="0">
+			<buttons>
+			<setting w="53" h="46" x="888" y="0" path="img/common/btn/setting.png"/>
+			<menu w="52" h="46" x="0" y="0" path="img/common/btn/dropdownmenu2.png"/>
+			</buttons>
+
+			<labels>
+			<settingbg w="940" h="50" x="0" y="0" path="img/player/setting/bg.png" />
+			<hint text="All Team Data Table" w="300" h="30" x="20" y="13"/>
+			</labels>
+						
+			<tab>
+			<stat w1="67" h1="30" w2="67" h2="30" x="794" y="58" 
+			      path1="img/common/tab/avg.jpg" 
+			      path2="img/common/tab/all.jpg"/>
+			</tab>
+			
+			<comboboxes>
+			<year w="100" h="20" x="480" y="285">
+					<string str="21-22" />
+					<string str="14-15" />
+					<string str="13-14" />
+					<string str="12-13" />
+					<string str="11-12" />
+					<string str="10-11" />
+					<string str="09-10" />
+					<string str="08-09" />
+					<string str="07-08" />
+					<string str="06-07" />
+					<string str="05-06" />
+					<string str="04-05" />
+					<string str="03-04" />
+					<string str="02-01" />
+					<string str="01-00" />
+				</year>
+			</comboboxes>
+			
+			<tablepane>
+			<table1 className="ui.team.advance.TeamStatTablePane" width="898"
+				height="410" x="20" y="90">
+				<columnnames>
+					<columnname name="Team" />
+					<columnname name="Season" />
+					<columnname name="G" />
+					<columnname name="W" />
+					<columnname name="L" />
+					<columnname name="MP" />
+					<columnname name="FG" />
+					<columnname name="FGA" />
+					<columnname name="FG%" />
+					<columnname name="3P" />
+					<columnname name="3PA" />
+					<columnname name="3P%" />
+					<columnname name="FT" />
+					<columnname name="FTA" />
+					<columnname name="FT%" />
+					<columnname name="ORB" />
+					<columnname name="DRB" />
+					<columnname name="TRB" />
+					<columnname name="AST" />
+					<columnname name="STL" />
+					<columnname name="BLK" />
+					<columnname name="TOV" />
+					<columnname name="PF" />
+					<columnname name="PTS" />
+				</columnnames>
+			</table1>
+			
+			<table2 className="ui.team.advance.TeamStatTablePane" width="891"
+				height="410" x="25" y="90">
+				<columnnames>
+					<columnname name="Team" />
+					<columnname name="Season" />
+					<columnname name="G" />
+					<columnname name="W" />
+					<columnname name="L" />
+					<columnname name="MP" />
+					<columnname name="FG" />
+					<columnname name="FGA" />
+					<columnname name="FG%" />
+					<columnname name="3P" />
+					<columnname name="3PA" />
+					<columnname name="3P%" />
+					<columnname name="FT" />
+					<columnname name="FTA" />
+					<columnname name="FT%" />
+					<columnname name="ORB" />
+					<columnname name="DRB" />
+					<columnname name="TRB" />
+					<columnname name="AST" />
+					<columnname name="STL" />
+					<columnname name="BLK" />
+					<columnname name="TOV" />
+					<columnname name="PF" />
+					<columnname name="PTS" />
+				</columnnames>
+			</table2>
+			</tablepane>
+			</panel>
+			
+			<panel className="ui.team.TeamHot" width="940" height="511"
+			x="0" y="0" bg="img/team/hot/hotbg.png">
+			<labels>
+			<hint w="200" h="30" x="95" y="20" />
+			<team0 w="200" h="30" x="90" y="120" />
+			<location w="200" h="30" x="105" y="330"/>
+			<league w="30" h="30" x="105" y="360"/>
+			<division w="100" h="30" x="105" y="390"/>
+			<data0 text="数据1" w="100" h="30" x="200" y="190" />
+			<teamImg0 text="球员照片1" w="120" h="120" x="70" y="160" />
+			
+			<team1 text="姓名2" w="200" h="30" x="580" y="100" />
+			<data1 text="数据2" w="100" h="30" x="785" y="110" />
+			<teamImg1 text="球员图2" w="80" h="80" x="470" y="90" />
+			
+			<team2 text="姓名" w="200" h="30" x="580" y="205" />
+			<data2 text="姓名" w="100" h="30" x="785" y="215" />
+			<teamImg2 text="姓名" w="80" h="80" x="470" y="195" />
+			
+			<team3 text="姓名" w="200" h="30" x="580" y="315" />
+			<data3 text="姓名" w="100" h="30" x="785" y="315" />
+			<teamImg3 text="姓名" w="80" h="80" x="470" y="300" />
+			
+			<team4 text="姓名" w="200" h="30" x="580" y="420" />
+			<data4 text="姓名" w="100" h="30" x="785" y="430" />
+			<teamImg4 text="姓名" w="80" h="80" x="470" y="400" />
+			</labels>
+			
+			<comboboxes>
+			<season w="110" h="25" x="410" y="25">
+					<string str="21-22" />
+					<string str="14-15" />
+					<string str="13-14" />
+					<string str="12-13" />
+					<string str="11-12" />
+					<string str="10-11" />
+					<string str="09-10" />
+					<string str="08-09" />
+					<string str="07-08" />
+					<string str="06-07" />
+					<string str="05-06" />
+					<string str="04-05" />
+					<string str="03-04" />
+					<string str="02-03" />
+					<string str="01-02" />
+					<string str="00-01" />
+				</season>
+				
+				<type w="110" h="25" x="550" y="25">
+				
+				<string str="PTS"/>
+				<string str="TRB"/>
+				<string str="ORB"/>
+				<string str="DRB"/>
+				<string str="AST"/>
+				<string str="BLK"/>
+				<string str="STL"/>
+				<string str="FG3_PCT"/>
+				<string str="FGA_PCT"/>
+				<string str="PER"/>
+				<string str="TS_PCT"/>
+				<string str="STL_PCT"/>
+				<string str="BLK_PCT"/>
+				<string str="AST_PCT"/>
+				<string str="USG_PCT"/>
+				<string str="TRB_PCT"/>
+				<string str="ORB_PCT"/>
+				<string str="DRB_PCT"/>
+				<string str="OFF_RTG"/>
+				<string str="DEF_RTG"/>
+				<string str="OFF_EFG_PCT"/>
+				<string str="SOS"/>
+				<string str="SRS"/>
+				<string str="MOV"/>
+				</type>
+			
+			</comboboxes>
+			<buttons>
+			<search text="SEARCH" w="110" h="25" x="765" y="25"/>
+			
+			</buttons>
+			</panel>
+
+			<panel className="ui.match.MatchPanel" width="940" height="511"
+			x="37" y="148" bg="img/common/background.jpg">
+			<labels>
+			<settingbg w="940" h="50" x="0" y="0" 
+			path="img/player/setting/bg.png"/>
+			
+			</labels >
+			</panel>
+			
+
+		<panel className="ui.team.compare.TeamCompareChoosePanel" width="940" height="511"
+			x="0" y="0" bg="img/team/compare/teamcomparechoose.png">
+
+			
+
+			<labels>
+			<img  w="300" h="200" x="335" y="65" />
+			
+			<abbrhint text="缩写：" w="100" h="60" x="570" y="55" />
+			<timehint text="建立时间:" w="100" h="60" x="570" y="85" />	
+			<divisionhint text="分区:" w="100" h="60" x="570" y="115" />	
+			<leaguehint text="联盟:" w="100" h="60" x="570" y="145" />
+			<recordhint text="纪录:" w="100" h="60" x="570" y="175" />	
+			<playoffhint text="参加季后赛次数:" w="200" h="60" x="740" y="55" />	
+			<winhint text="夺冠次数:" w="100" h="60" x="740" y="85" />
+					
+			
+			<abbr text="sample" w="100" h="60" x="610" y="55" />
+			<time text="sample" w="100" h="60" x="640" y="85" />	
+			<division text="sample" w="100" h="60" x="610" y="115" />	
+			<league text="sample" w="100" h="60" x="610" y="145" />				
+			<record text="sample" w="100" h="60" x="610" y="175" />	
+			<playoff text="sample" w="100" h="60" x="850" y="55" />	
+			<win text="sample" w="100" h="60" x="820" y="85" />	
+			
+						
+			<name text="Example team1" w="200" h="62" x="480" y="0" font="微软雅黑"
+					fontsize="20"  />
+			<team text="Knight" w="1030" h="60" x="25" y="190" font="微软雅黑"
+					fontsize="20"  />
+					
+			<img2  w="300" h="200" x="320" y="320" />
+					
+			<abbrhint2 text="缩写：" w="1030" h="60" x="570" y="300" />
+			<timehint2 text="建立时间:" w="1030" h="60" x="570" y="330" />	
+			<divisionhint2 text="分区:" w="1030" h="60" x="570" y="360" />	
+			<leaguehint2 text="联盟:" w="1030" h="60" x="570" y="390" />
+			<recordhint2 text="纪录:" w="1030" h="60" x="570" y="420" />	
+			<playoffhint2 text="参加季后赛次数:" w="200" h="60" x="740" y="300" />	
+			<winhint2 text="夺冠次数:" w="1030" h="60" x="740" y="330" />
+			
+			<abbr2 text="sample" w="1030" h="60" x="610" y="300" />
+			<time2 text="sample" w="1030" h="60" x="640" y="330" />	
+			<division2 text="sample" w="1030" h="60" x="610" y="360" />	
+			<league2 text="sample" w="1030" h="60" x="610" y="390" />				
+			<record2 text="sample" w="1030" h="60" x="610" y="420" />	
+			<playoff2 text="sample" w="1030" h="60" x="850" y="300" />	
+			<win2 text="sample" w="1030" h="60" x="820" y="330" />	
+						
+			<name2 text="Example Team2" w="200" h="60" x="480" y="250" font="微软雅黑"
+					fontsize="20"  />
+			<team2 text="Knight" w="200" h="60" x="25" y="190" font="微软雅黑"
+					fontsize="20"  />
+			</labels>
+			
+			<buttons>
+			<btn1 text="btn1" w="30" h="30" x="238" y="280" path="img/player/compare/compare.jpg" />	
+			<btn2 text="btn2" w="30" h="30" x="238" y="330" path="img/player/compare/compare.jpg"/>	
+			<search text="Search" w="142" h="43" x="88" y="397" path="img/player/compare/compbtn.png"/>
+			
+			</buttons>
+			
+			<textfields>
+			<field1 w="180" h="30" x="58" y="280" />
+			<field2 w="180" h="30" x="58" y="330" />
+			</textfields>
+		</panel>
+		
+		
+		<panel className="ui.team.compare.TeamCompare" width="940" height="511"
+			x="0" y="0" bg="img/team/compare/compare.png">
+			<labels>
+			<name1 text="hh" w="100" h="30" x="50" y="0" />	
+			<name2 text="hh" w="100" h="30" x="300" y="0" />	
+			<chart1 text="hh" w="400" h="300" x="30" y="100" />	
+			<chart2 text="hh" w="320" h="185" x="540" y="85" />	
+			<chart3 text="hh" w="320" h="185" x="540" y="315" />
+			</labels>
+		</panel>
+		
+			<panel className="ui.player.PlayerNav" width="770" 
+			height="60" x="106" y="45" bg="img/common/nav/navbg.jpg" >
+			
+			<labels>
+			<index  w="103" h="60" x="0" y="0" path="img/player/nav/index.png"/>
+			<playerstat  w="103" h="60" x="104" y="0" path="img/player/nav/stat.png"/>
+			<hotplayer  w="103" h="60" x="208" y="0" path="img/player/nav/hotplayer.png"/>
+			<playerpast w="103" h="60" x="312" y="0" path="img/player/nav/playerpast.png"/>
+			</labels>
+			
+			</panel>
+
+			
+			
+			<panel className="ui.match.MatchNav" width="770" 
+			height="60" x="106" y="45" bg="img/common/nav/navbg.jpg" >
+			
+			<labels>
+			<matchstat  w="103" h="60" x="0" y="0" path="img/match/nav/stat.png"/>
+			<live  w="103" h="60" x="104" y="0" path="img/match/nav/live.png"/>
+			</labels>
+			
+			</panel>
+
+            <panel className="ui.stats.StatsNav" width="770"
+                   height="60" x="106" y="45" bg="img/common/nav/navbg.jpg" >
+
+                <labels>
+				<stat1  w="103" h="60" x="0" y="0" path="img/stat/nav/stat1.png"/>
+				<stat2 w="103" h="60" x="104" y="0" path="img/stat/nav/stat2.png"/>
+
+                </labels>
+
+            </panel>
+			
+			<panel className="ui.player.stat.PlayerFilter" width="690" height="260"
+			x="0" y="0" bg="img/common/filter/filterbg.jpg">
+			<labels>
+			<season w="177" h="27" x="40" y="13" path="img/common/filter/filtercdt.png"/>
+			<type w="177" h="27" x="256" y="13" path="img/common/filter/filtercdt.png"/>
+			<league w="177" h="27" x="479" y="13" path="img/common/filter/filtercdt.png"/>
+			<division w="177" h="27" x="40" y="13" path="img/common/filter/filtercdt.png"/>
+			<team w="177" h="27" x="40" y="13" path="img/common/filter/filtercdt.png"/>
+			<posision w="177" h="27" x="40" y="13" path="img/common/filter/filtercdt.png"/>
+			<college w="177" h="27" x="40" y="13" path="img/common/filter/filtercdt.png"/>
+			<country w="177" h="27" x="40" y="13" path="img/common/filter/filtercdt.png"/>
+			<height w="177" h="27" x="40" y="13" path="img/common/filter/filtercdt.png"/>
+			<weight w="177" h="27" x="40" y="13" path="img/common/filter/filtercdt.png"/>
+			<begindate w="177" h="27" x="40" y="13" path="img/common/filter/filtercdt.png"/>
+			<enddate w="177" h="27" x="40" y="13" path="img/common/filter/filtercdt.png"/>
+			</labels>
+			
+			<buttons>
+			<search w="177" h="27" x="485" y="215" path="img/common/filter/search.png"/>
+			</buttons>
+			
+			
+			<comboboxes>
+				<season w="150" h="25" x="10" y="20">
+					<string str="21-22" />
+					<string str="14-15" />
+					<string str="13-14" />
+					<string str="12-13" />
+					<string str="11-12" />
+					<string str="10-11" />
+					<string str="09-10" />
+					<string str="08-09" />
+					<string str="07-08" />
+					<string str="06-07" />
+					<string str="05-06" />
+					<string str="04-05" />
+					<string str="03-04" />
+					<string str="02-03" />
+					<string str="01-02" />
+					<string str="00-01" />
+					<string str="Career"/>
+				</season>
+				
+				
+				<type w="150" h="25" x="190" y="20">
+					
+					<string str="Average Data"/>
+					<string str="Total Data"/>
+					<string str="Advanced Data"/>
+				</type>
+				
+				<regular w="150" h="25" x="370" y="20">
+					<string str="Post Season" />
+					<string str="Regular Season" />
+				</regular>
+				
+				<position w="150" h="25" x="10" y="60">
+					<string str="All Position"/>
+					<string str="C" />
+					<string str="PF" />
+					<string str="SF" />
+					<string str="PG" />
+					<string str="SG" />
+				</position>
+				
+				<division w="150" h="25" x="190" y="60">
+					<string str="All Division"/>
+					<string str="Atlantic" />
+					<string str="Central" />
+					<string str="Nothwest" />
+					<string str="Pacific" />
+					<string str="Southeast" />
+					<string str="Southwest" />
+				</division>
+				
+				<league w="150" h="25" x="370" y="60">
+					<string str="All Leagues"/>
+					<string str="W"/>
+					<string str="E"/>
+				</league>
+				
+				
+				
+				
+				
+				<common1 w="110" h="25" x="10" y="100">
+					<string str="参赛场数" />
+					<string str="先发场数" />
+					<string str="篮板数" />
+					<string str="助攻数" />
+					<string str="在场时间" />
+					<string str="投篮命中率" />
+					<string str="三分命中率" />
+					<string str="罚球命中率" />
+					<string str="抢断数" />
+					<string str="盖帽数" />
+					<string str="失误数" />
+					<string str="犯规数" />
+					<string str="得分" />
+					<string str="进攻篮板数" />
+					<string str="防守篮板数" />					
+				</common1>
+
+				<common2 w="110" h="25" x="150" y="100">
+					<string str="参赛场数" />
+					<string str="先发场数" />
+					<string str="篮板数" />
+					<string str="助攻数" />
+					<string str="在场时间" />
+					<string str="投篮命中率" />
+					<string str="三分命中率" />
+					<string str="罚球命中率" />
+					<string str="抢断数" />
+					<string str="盖帽数" />
+					<string str="失误数" />
+					<string str="犯规数" />
+					<string str="得分" />
+					<string str="进攻篮板数" />
+					<string str="防守篮板数" />			
+				</common2>
+
+				<common3 w="110" h="25" x="290" y="100">
+					<string str="参赛场数" />
+					<string str="先发场数" />
+					<string str="篮板数" />
+					<string str="助攻数" />
+					<string str="在场时间" />
+					<string str="投篮命中率" />
+					<string str="三分命中率" />
+					<string str="罚球命中率" />
+					<string str="抢断数" />
+					<string str="盖帽数" />
+					<string str="失误数" />
+					<string str="犯规数" />
+					<string str="得分" />
+					<string str="进攻篮板数" />
+					<string str="防守篮板数" />			
+				</common3>
+
+				<common4 w="110" h="25" x="10" y="150">
+					<string str="参赛场数" />
+					<string str="先发场数" />
+					<string str="篮板数" />
+					<string str="助攻数" />
+					<string str="在场时间" />
+					<string str="投篮命中率" />
+					<string str="三分命中率" />
+					<string str="罚球命中率" />
+					<string str="抢断数" />
+					<string str="盖帽数" />
+					<string str="失误数" />
+					<string str="犯规数" />
+					<string str="得分" />
+					<string str="进攻篮板数" />
+					<string str="防守篮板数" />	
+				</common4>
+				
+				<common5 w="110" h="25" x="150" y="150">
+					<string str="参赛场数" />
+					<string str="先发场数" />
+					<string str="篮板数" />
+					<string str="助攻数" />
+					<string str="在场时间" />
+					<string str="投篮命中率" />
+					<string str="三分命中率" />
+					<string str="罚球命中率" />
+					<string str="抢断数" />
+					<string str="盖帽数" />
+					<string str="失误数" />
+					<string str="犯规数" />
+					<string str="得分" />
+					<string str="进攻篮板数" />
+					<string str="防守篮板数" />			
+				</common5>
+				
+				<common6 w="110" h="25" x="290" y="150">
+					<string str="参赛场数" />
+					<string str="先发场数" />
+					<string str="篮板数" />
+					<string str="助攻数" />
+					<string str="在场时间" />
+					<string str="投篮命中率" />
+					<string str="三分命中率" />
+					<string str="罚球命中率" />
+					<string str="抢断数" />
+					<string str="盖帽数" />
+					<string str="失误数" />
+					<string str="犯规数" />
+					<string str="得分" />
+					<string str="进攻篮板数" />
+					<string str="防守篮板数" />			
+				</common6>
+				
+				<advanced1 w="110" h="25" x="10" y="100">
+					<string str="进攻篮板率" />
+					<string str="防守篮板率" />
+					<string str="总篮板率" />
+					<string str="助攻率" />
+					<string str="抢断率" />
+					<string str="盖帽率" />
+					<string str="失误率" />
+					<string str="使用率" />
+				</advanced1>
+
+				<advanced2 w="110" h="25" x="150" y="100">
+					<string str="进攻篮板率" />
+					<string str="防守篮板率" />
+					<string str="总篮板率" />
+					<string str="助攻率" />
+					<string str="抢断率" />
+					<string str="盖帽率" />
+					<string str="失误率" />
+					<string str="使用率" />			
+				</advanced2>
+
+				<advanced3 w="110" h="25" x="290" y="100">
+					<string str="进攻篮板率" />
+					<string str="防守篮板率" />
+					<string str="总篮板率" />
+					<string str="助攻率" />
+					<string str="抢断率" />
+					<string str="盖帽率" />
+					<string str="失误率" />
+					<string str="使用率" />
+				</advanced3>
+
+				<advanced4 w="110" h="25" x="10" y="150">
+					<string str="true shooting percentage" />
+					<string str="player efficiency rating" />
+					<string str="3-point attempt rate" />
+					<string str="offensive win shares" />
+					<string str="defensive win shares" />
+					<string str="win shares" />
+					<string str="win shares per 48 mins" />
+					<string str="offensive box plus/minus" />
+					<string str="defensive box plus/minus" />
+					<string str="box plus/minus" />
+					<string str="value over replacement player" />
+				</advanced4>
+				
+				<advanced5 w="110" h="25" x="150" y="150">
+					<string str="true shooting percentage" />
+					<string str="player efficiency rating" />
+					<string str="3-point attempt rate" />
+					<string str="offensive win shares" />
+					<string str="defensive win shares" />
+					<string str="win shares" />
+					<string str="win shares per 48 mins" />
+					<string str="offensive box plus/minus" />
+					<string str="defensive box plus/minus" />
+					<string str="box plus/minus" />
+					<string str="value over replacement player" />		
+				</advanced5>
+				
+				<advanced6 w="110" h="25" x="290" y="150">
+					<string str="true shooting percentage" />
+					<string str="player efficiency rating" />
+					<string str="3-point attempt rate" />
+					<string str="offensive win shares" />
+					<string str="defensive win shares" />
+					<string str="win shares" />
+					<string str="win shares per 48 mins" />
+					<string str="offensive box plus/minus" />
+					<string str="defensive box plus/minus" />
+					<string str="box plus/minus" />
+					<string str="value over replacement player" />
+				</advanced6>
+				
+				
+			</comboboxes>
+			</panel>
+			
+			<panel className="ui.team.TeamFilter" width="690" height="260"
+			x="250" y="46" bg="img/common/filter/filterbg.jpg">
+			
+				
+			<buttons>
+			<search w="177" h="27" x="485" y="215" path="img/common/filter/search.png"/>
+			</buttons>
+			
+			
+			<comboboxes>
+				<season w="150" h="25" x="10" y="20">
+					<string str="21-22" />
+					<string str="14-15" />
+					<string str="13-14" />
+					<string str="12-13" />
+					<string str="11-12" />
+					<string str="10-11" />
+					<string str="09-10" />
+					<string str="08-09" />
+					<string str="07-08" />
+					<string str="06-07" />
+					<string str="05-06" />
+					<string str="04-05" />
+					<string str="03-04" />
+					<string str="02-03" />
+					<string str="01-02" />
+					<string str="00-01" />
+					<string str="Career"/>
+				</season>
+				
+				
+				<division w="150" h="25" x="190" y="10">
+					<string str="All Division"/>
+					<string str="Atlantic" />
+					<string str="Central" />
+					<string str="Nothwest" />
+					<string str="Pacific" />
+					<string str="Southeast" />
+					<string str="Southwest" />
+				</division>
+				
+				<league w="150" h="25" x="370" y="10">
+					<string str="All Leagues"/>
+					<string str="W"/>
+					<string str="E"/>
+				</league>
+			</comboboxes>
+			
+			
+			
+			</panel>
+			
+			
+			<!-- 直播panel -->
+			<panel className="ui.live.LivePanel" width="940" height="511" x="0" y="0" bg="img/match/live/vs.jpg">
+                <labels>
+                    <score1  text="" w="103" h="60" x="87" y="165" />
+                    <score2 text="" w="103" h="60" x="87" y="282" />
+                    <img1   w="80" h="80" x="82" y="67" />
+                    <img2   w="80" h="80" x="82" y="363" />
+                    <start w="200" h="40" x="270" y="0" />
+                    <totaltime w="200" h="40" x="270" y="30" />
+                    <gym w="200" h="40" x="270" y="60" />
+                    <att w="200" h="40" x="270" y="90" />
+                    <rtime w="200" h="40" x="580" y="95" />
+                    <data text="点击查看详细" w="150" h="30" x="850" y="102"/>
+                </labels>
+
+                <tables>
+                    <scores width="302" height="85" x="628" y="8">
+                        <columnnames>
+                            <columnname name="球队" />
+                            <columnname name="一" />
+                            <columnname name="二" />
+                            <columnname name="三" />
+                            <columnname name="四" />
+                            <columnname name="总分" />
+                        </columnnames>
+                    </scores>
+                    <msg width="680" height="350" x="250" y="137">
+                        <columnnames>
+                            <columnname name="时间" />
+                            <columnname name="球队" />
+                            <columnname name="事件" />
+                            <columnname name="比分" />
+                        </columnnames>
+                    </msg>
+                </tables>
+
+			</panel>
+			
+			<panel className="ui.player.stat.CoverPanel" width="940" height="511"
+			x="0" y="0" bg="img/home/background.jpg">
+			</panel>
+			
+			<panel className="ui.live.LiveChoosePane"  width="940" height="511"
+			    x="0" y="0"  bg="img/match/live/choose.png">
+			    <labels>
+			        <title text="title" w="500" h="60" x="40" y="32" />
+                    <content text="title" w="500" h="60" x="40" y="70" />
+                    <watch text="立即观看" w="100" h="60" x="395" y="70"/>
+                    <htitle text="title" w="500" h="60" x="535" y="70" />
+                    <hcontent text="title" w="500" h="60" x="535" y="103" />
+                    <hwatch text="直播回顾" w="90" h="60" x="815" y="103"/>
+                    <red text="" w="450" h="80" x="28" y="48" />
+                    <green text="" w="380" h="56" x="520" y="86" />
+			    </labels>
+			</panel>
+			
+			<panel className="ui.player.info.PlayerInfoPane" width="940" height="511"
+			x="0" y="0" bg="img/player/stat/playerdetail.png">
+			<labels>
+			<img  w="195" h="150" x="20" y="50" />
+			
+			<namehint text="姓名" w="1030" h="60" x="20" y="200" />
+				
+			<numhint text="球衣号码:" w="1030" h="60" x="220" y="30" />
+			<positionhint text="位置:" w="1030" h="60" x="220" y="60" />	
+			<bornhint text="生日:" w="1030" h="60" x="220" y="90" />	
+			<debuthint text="首秀:" w="1030" h="60" x="220" y="120" />
+			<heighthint text="身高:" w="1030" h="60" x="220" y="150" />	
+			<weighthint text="体重:" w="1030" h="60" x="500" y="30" />	
+			<hometownhint text="出生地:" w="1030" h="60" x="500" y="60" />
+			<highschoolhint text="高中:" w="1030" h="60" x="500" y="90" />	
+			<collegehint text="大学:" w="1030" h="60" x="500" y="120" />					
+			<exphint text="球龄:" w="1030" h="60" x="500" y="150" />					
+			
+			<num text="hh" w="1030" h="60" x="300" y="30" />
+			<position text="hh" w="1030" h="60" x="300" y="60" />	
+			<born text="hh" w="1030" h="60" x="300" y="90" />	
+			<debut text="hh" w="190" h="60" x="300" y="120" />
+			<height text="hh" w="1030" h="60" x="300" y="150" />	
+			<weight text="hh" w="1030" h="60" x="580" y="30" />	
+			<hometown text="hh" w="1030" h="60" x="580" y="60" />
+			<highschool text="hh" w="230" h="60" x="580" y="90" />
+			<college text="hh" w="230" h="60" x="580" y="120" />
+			<exp text="hh" w="1030" h="60" x="580" y="150" />
+						
+			<name text="Lerborn James" w="1030" h="30" x="30" y="10" font="微软雅黑"
+					fontsize="20"  />
+			<team text="Knight" w="1030" h="60" x="25" y="190" font="微软雅黑"
+					fontsize="20"  />
+			
+			<chart1name text="21-22 Radar" w="380" h="30" x="32" y="227"/>
+			<chart1 text="hh" w="318" h="238" x="45" y="265" />	
+			<chart2name text="21-22 Line Chart" w="380" h="30" x="445" y="230"/>
+			<chart2 text="hh" w="315" h="205" x="440" y="290" />	
+			
+			<findmore text="查看更多" w="100" h="30" x="823" y="480" />
+			</labels>
+			
+			<comboboxes>
+			<box w="100" h="20" x="480" y="285">
+					<string str="PTS" />
+					<string str="AST" />
+					<string str="BLK" />
+					<string str="STL" />
+					<string str="TRB" />
+					<string str="DRB" />
+					<string str="ORB" />
+					<string str="TOV" />
+					<string str="PF" />
+					<string str="FG3_PCT" />
+					<string str="FGA_PCT" />
+					<string str="FT_PCT" />
+				</box>
+			</comboboxes>
+			<tablepane className="ui.player.info.FiveMatchTablePane"
+				width="940" height="200" x="0" y="305">
+				<columnnames>
+					<columnname name="比赛编号" />
+					<columnname name="赛季" />
+					<columnname name="日期" />
+					<columnname name="是常规赛" />
+					<columnname name="地点" />
+					<columnname name="主队" />
+					<columnname name="主队得分" />
+					<columnname name="客队" />
+					<columnname name="客队得分" />
+					<columnname name="比赛时长" />
+					
+				</columnnames>
+			</tablepane>
+			
+			<tab>
+			<stat w1="67" h1="30" w2="67" h2="30" x="20" y="265" 
+			      path1="img/common/tab/avg.jpg" 
+			      path2="img/common/tab/all.jpg"/>
+			</tab>
+		</panel>
+		
+		<panel className="ui.player.compare.CompareChoosePanel" width="940" height="511"
+			x="0" y="0">
+		</panel>
+		
+		<panel className="ui.player.compare.ComparePanel" width="940" height="511"
+			x="0" y="0">
+		</panel>
+		
+		<panel className="ui.player.hot.PlayerHotPane" width="940" height="511"
+			x="0" y="0" bg="img/player/hot/hotbg.png">
+			<labels>
+			<hint w="200" h="30" x="95" y="20" />
+			<name0 text="姓名1" w="200" h="30" x="130" y="80" />
+			<position0 text="位置1" w="200" h="60" x="70" y="310" />
+			<team0 text="球队1" w="200" h="30" x="70" y="370" />
+			<data0 text="数据1" w="100" h="30" x="230" y="175" />
+			<playerImg0 text="球员照片1" w="150" h="115" x="70" y="140" />
+			<teamImg0 text="球队照片1" w="100" h="100" x="370" y="20" />
+			
+			<name1 text="姓名2" w="130" h="30" x="580" y="100" />
+			<position1 text="位置2" w="100" h="30" x="603" y="135" />
+			<team1 text="球队2" w="100" h="30" x="654" y="135" />
+			<data1 text="数据2" w="100" h="30" x="785" y="110" />
+			<playerImg1 text="球员图2" w="100" h="76" x="470" y="90" />
+			<teamImg1 text="球队图2" w="100" h="100" x="785" y="20" />
+			
+			<name2 text="姓名" w="130" h="30" x="580" y="205" />
+			<position2 text="姓名" w="1030" h="30" x="603" y="240" />
+			<team2 text="姓名" w="100" h="30" x="654" y="240" />
+			<data2 text="姓名" w="100" h="30" x="785" y="215" />
+			<playerImg2 text="姓名" w="100" h="76" x="470" y="195" />
+			<teamImg2 text="姓名" w="92" h="92" x="720" y="330" />
+			
+			<name3 text="姓名" w="130" h="30" x="580" y="315" />
+			<position3 text="姓名" w="100" h="30" x="603" y="350" />
+			<team3 text="姓名" w="100" h="30" x="654" y="350" />
+			<data3 text="姓名" w="100" h="30" x="785" y="315" />
+			<playerImg3 text="姓名" w="100" h="76" x="470" y="300" />
+			<teamImg3 text="姓名" w="92" h="92" x="720" y="390" />
+			
+			<name4 text="姓名" w="130" h="30" x="580" y="415" />
+			<position4 text="姓名" w="100" h="30" x="603" y="450" />
+			<team4 text="姓名" w="100" h="30" x="654" y="450" />
+			<data4 text="姓名" w="100" h="30" x="785" y="435" />
+			<playerImg4 text="姓名" w="100" h="76" x="470" y="400" />
+			<teamImg4 text="姓名" w="92" h="92" x="720" y="450" />
+			
+			
+			</labels>
+			
+			<comboboxes>
+			<season w="110" h="25" x="410" y="25">
+					<string str="21-22" />
+					<string str="14-15" />
+					<string str="13-14" />
+					<string str="12-13" />
+					<string str="11-12" />
+					<string str="10-11" />
+					<string str="09-10" />
+					<string str="08-09" />
+					<string str="07-08" />
+					<string str="06-07" />
+					<string str="05-06" />
+					<string str="04-05" />
+					<string str="03-04" />
+					<string str="02-03" />
+					<string str="01-02" />
+					<string str="00-01" />
+				</season>
+				
+				<type w="110" h="25" x="550" y="25">
+				
+				<string str="PTS"/>
+				<string str="TRB"/>
+				<string str="ORB"/>
+				<string str="DRB"/>
+				<string str="AST"/>
+				<string str="BLK"/>
+				<string str="STL"/>
+				<string str="PER"/>
+				
+				</type>
+			
+			</comboboxes>
+			<buttons>
+			<search text="SEARCH" w="110" h="25" x="765" y="25"/>
+			
+			</buttons>
+		</panel>
+
+        <panel className="ui.stats.StatsPanel" width="940" height="511"
+               x="37" y="148">
+
+        </panel>
+
+        <panel className="ui.stats.Stat1" width="940" height="511"
+               x="0" y="0">
+            <comboboxes>
+                <season w="100" h="22" x="730" y="140">
+					<string str="21-22" />
+					<string str="14-15" />
+                    <string str="13-14" />
+                    <string str="12-13" />
+                    <string str="10-11" />
+                    <string str="09-10" />
+                    <string str="08-09" />
+                    <string str="07-08" />
+                    <string str="06-07" />
+                    <string str="05-06" />
+                    <string str="04-05" />
+                </season>
+            </comboboxes>
+            <tables>
+                <ks width="300" height="150" x="200" y="200">
+                    <columnnames>
+                        <columnname name="" />
+                        <columnname name="D值" />
+                        <columnname name="p值" />
+                    </columnnames>
+                </ks>
+                <pf width="400" height="150" x="225" y="200">
+                    <columnnames>
+                        <columnname name="" />
+                        <columnname name="偏度" />
+                        <columnname name="峰度" />
+                        <columnname name="s^2+k^2" />
+                        <columnname name="p值" />
+                    </columnnames>
+                </pf>
+            </tables>
+            <labels>
+                <a w="300" h="200" x="200" y="170"/>
+                <b w="300" h="200" x="500" y="170"/>
+            </labels>
+        </panel>
+
+        <panel className="ui.stats.Stat2" width="940" height="511"
+               x="0" y="0">
+
+            <comboboxes>
+                <season w="100" h="22" x="730" y="140">
+					<string str="21-22" />
+					<string str="14-15" />
+                    <string str="13-14" />
+                    <string str="12-13" />
+                    <string str="10-11" />
+                    <string str="09-10" />
+                    <string str="08-09" />
+                    <string str="07-08" />
+                    <string str="06-07" />
+                    <string str="05-06" />
+                    <string str="04-05" />
+                </season>
+                <what w="80" h="22" x="630" y="140">
+                    <string str="AST" />
+                    <string str="BLK" />
+                    <string str="STL" />
+                    <string str="TRB" />
+                    <string str="TOV" />
+                    <string str="PF" />
+                </what>
+                <ds w="100" h="22" x="510" y="140">
+                    <string str="Each Match" />
+                    <string str="30 Teams" />
+                </ds>
+            </comboboxes>
+            <labels>
+                <img w="385" h="300" x="190" y="175"/>
+            </labels>
+
+        </panel>
+
+        <panel className="ui.stats.InferPanel" width="940" height="511"
+               x="0" y="0">
+        </panel>
+        
+        <panel className="ui.player.info.FourTablePane" width="940" height="511"
+               x="0" y="0" bg="img/player/stat/playercareer.png">
+               <labels>
+              <name text="姓名" w="200" h="30" x="115" y="62"  font="微软雅黑"
+					fontsize="26"  />
+              <img text="照片" w="130" h="100" x="50" y="20" />
+              <total text="Total Data" w="150" h="30" x="310" y="10" font="微软雅黑"
+					fontsize="17"  />
+              <pergame text="Average Data" w="150" h="30" x="435" y="10" font="微软雅黑"
+					fontsize="17"  />
+              <advanced text="Advanced Data" w="150" h="30" x="590" y="10" font="微软雅黑"
+					fontsize="17"  />
+              <salary text="Salary Data" w="150" h="60" x="780" y="20" />
+               
+               
+               </labels>
+               <tablepane className="ui.player.info.PlayerDetailPane" width="940"
+				height="375" x="12" y="104">
+				<columnnames>
+					<columnname name="SEASON" />
+					<columnname name="TEAM" />
+					<columnname name="G" />
+					<columnname name="GS" />
+					<columnname name="MIN" />
+					<columnname name="FG" />					
+					<columnname name="FGA%" />
+					<columnname name="FG3" />					
+					<columnname name="FG3%" />
+					<columnname name="FG2" />					
+					<columnname name="FG2%" />
+					<columnname name="EFG%" />
+					<columnname name="FT" />
+					<columnname name="FT%" />
+					<columnname name="TRB" />
+					<columnname name="AST" />
+					<columnname name="STL" />
+					<columnname name="BLK" />
+					<columnname name="TOV" />
+					<columnname name="PF" />
+					<columnname name="PTS" />
+					<columnname name="$"/>
+				</columnnames>
+			</tablepane>
+        </panel>
+        
+        <panel className="ui.match.stat.CoverPanel" width="940" height="511"
+			x="0" y="0" bg="img/home/background.jpg">
+			</panel>
+			
+		<panel className="ui.match.stat.MatchStat" width="940" height="511"
+			x="0" y="0" >
+			<tablepane className="ui.match.MatchAllTablePane" width="900"
+				height="420" x="20" y="75">
+				<columnnames>
+				<columnname name="ID" />
+					<columnname name="DATE" />
+					<columnname name="HOME_TEAM" />
+					<columnname name="GUEST_TEAM" />
+					<columnname name="POINT" />
+					<columnname name="TIME" />
+					<columnname name="LOCATION" />					
+					
+
+				</columnnames>
+			</tablepane>
+			<buttons>
+			<setting w="53" h="46" x="888" y="0" path="img/common/btn/setting.png"/>
+			<menu w="52" h="46" x="0" y="0" path="img/common/btn/dropdownmenu2.png"/>
+			</buttons>
+			
+			<labels>
+			<settingbg w="940" h="50" x="0" y="0" path="img/player/setting/bg.png"/>
+			</labels>
+			</panel>
+		<panel className="ui.match.stat.MatchFilter" width="690" height="260"
+			x="0" y="0" bg="img/common/filter/filterbg.jpg">
+			
+			
+			<buttons>
+			<search w="177" h="27" x="485" y="215" path="img/common/filter/search.png"/>
+			</buttons>
+			
+			
+			<comboboxes>
+				<season w="150" h="25" x="10" y="20">
+					<string str="21-22" />
+					<string str="14-15" />
+					<string str="13-14" />
+					<string str="12-13" />
+					<string str="11-12" />
+					<string str="10-11" />
+					<string str="09-10" />
+					<string str="08-09" />
+					<string str="07-08" />
+					<string str="06-07" />
+					<string str="05-06" />
+					<string str="04-05" />
+					<string str="03-04" />
+					<string str="02-03" />
+					<string str="01-02" />
+					<string str="00-01" />
+					<string str="Career"/>
+				</season>
+				
+				
+				<team w="150" h="25" x="190" y="20">
+					<string str="ALL TEAMS"/>
+					<string str="HOU"/>
+					<string str="DAL"/>
+				</team>
+				
+				<home w="150" h="25" x="370" y="20">
+					<string str="NO CARE HOME" />
+					<string str="YES" />
+					<string str="NO"/>
+				</home>
+				
+				<begin w="150" h="25" x="10" y="60">
+					<string str="All"/>
+					
+				</begin>
+				
+				<end w="150" h="25" x="190" y="60">
+					<string str="ALL"/>
+				</end>
+				
+				<regular w="150" h="25" x="370" y="60">
+					<string str="Post Season" />
+					<string str="Regular Season" />
+				</regular>
+				
+				
+			</comboboxes>
+			</panel>
+			
+			
+			
+			<panel className="ui.match.info.MatchInfoPanel" width="940" height="511"
+			x="0" y="0" bg="img/match/info/matchinfo.png">
+			<labels>
+			
+			<namehint text="姓名" w="1030" h="60" x="20" y="200" />
+				
+			<hometeamhint text="主队：" w="1030" h="60" x="30" y="20" />
+			<homepointhint text="主队得分：" w="1030" h="60" x="30" y="50" />	
+			<guestteamhint text="客队：" w="1030" h="60" x="30" y="80" />	
+			<guestpointhint text="客队得分：" w="1030" h="60" x="30" y="110" />
+			<timehint text="比赛时长：" w="1030" h="60" x="230" y="110" />	
+			<seasonhint text="赛季：" w="1030" h="60" x="230" y="20" />	
+			<datehint text="比赛日期：" w="1030" h="60" x="230" y="50" />
+			<typehint text="比赛类型：" w="1030" h="60" x="230" y="80" />	
+								
+			
+			<hometeam text="hh" w="1030" h="60" x="90" y="20" />
+			<homepoint text="hh" w="1030" h="60" x="90" y="50" />	
+			<guestteam text="hh" w="1030" h="60" x="90" y="80" />	
+			<guestpoint text="hh" w="1030" h="60" x="90" y="110" />				
+			<time text="hh" w="1030" h="60" x="310" y="110" />	
+			<season text="hh" w="1030" h="60" x="310" y="20" />	
+			<date text="hh" w="1030" h="60" x="310" y="50" />	
+			<type text="hh" w="1030" h="60" x="310" y="80" />	
+			
+						
+			
+			<chart1 text="" w="400" h="300" x="60" y="220" />	
+			<chart2 text="" w="400" h="300" x="550" y="0" />	
+			
+			<findmore text="查看更多信息" w="1030" h="60" x="800" y="450" />
+			</labels>
+			
+			 <tables>
+                    <scores width="302" height="85" x="475" y="60">
+                        <columnnames>
+                            <columnname name="球队" />
+                            <columnname name="一" />
+                            <columnname name="二" />
+                            <columnname name="三" />
+                            <columnname name="四" />
+                            <columnname name="总分" />
+                        </columnnames>
+                    </scores>
+             </tables>
+
+			
+			
+		</panel>
+		<panel className="ui.player.compare.CompareChoosePanel" width="940" height="511"
+			x="0" y="0" bg="img/player/comparechoose.png">
+			<labels>
+			<img  w="195" h="150" x="346" y="75" />
+			
+			<numhint text="号码：" w="100" h="60" x="580" y="55" />
+			<positionhint text="位置:" w="100" h="60" x="580" y="85" />	
+			<bornhint text="生日:" w="100" h="60" x="580" y="115" />	
+			<debuthint text="首秀:" w="100" h="60" x="580" y="145" />
+			<heighthint text="身高:" w="100" h="60" x="580" y="175" />	
+			<weighthint text="体重:" w="100" h="60" x="760" y="55" />	
+			<hometownhint text="出生地:" w="100" h="60" x="760" y="85" />
+			<highschoolhint text="高中:" w="100" h="60" x="760" y="115" />	
+			<collegehint text="大学:" w="100" h="60" x="760" y="145" />					
+			<exphint text="球龄:" w="100" h="60" x="760" y="175" />					
+			
+			<num text="hh" w="100" h="60" x="620" y="55" />
+			<position text="hh" w="100" h="60" x="620" y="85" />	
+			<born text="hh" w="100" h="60" x="620" y="115" />	
+			<debut text="hh" w="100" h="60" x="620" y="145" />				
+			<height text="hh" w="100" h="60" x="620" y="175" />	
+			<weight text="hh" w="100" h="60" x="810" y="55" />	
+			<hometown text="hh" w="100" h="60" x="810" y="85" />	
+			<highschool text="hh" w="100" h="60" x="810" y="115" />	
+			<college text="hh" w="100" h="60" x="810" y="145" />	
+			<exp text="hh" w="100" h="60" x="810" y="175" />	
+						
+			<name text="Example Name1" w="200" h="62" x="480" y="0" font="微软雅黑"
+					fontsize="20"  />
+			<team text="Knight" w="1030" h="60" x="25" y="190" font="微软雅黑"
+					fontsize="20"  />
+					
+			<img2  w="195" h="150" x="340" y="325" />
+					
+			<numhint2 text="号码：" w="1030" h="60" x="580" y="300" />
+			<positionhint2 text="位置:" w="1030" h="60" x="580" y="330" />	
+			<bornhint2 text="生日:" w="1030" h="60" x="580" y="360" />	
+			<debuthint2 text="首秀:" w="1030" h="60" x="580" y="390" />
+			<heighthint2 text="身高:" w="1030" h="60" x="580" y="420" />	
+			<weighthint2 text="体重:" w="1030" h="60" x="760" y="300" />	
+			<hometownhint2 text="出生地:" w="1030" h="60" x="760" y="330" />
+			<highschoolhint2 text="高中:" w="1030" h="60" x="760" y="360" />	
+			<collegehint2 text="大学:" w="1030" h="60" x="760" y="390" />					
+			<exphint2 text="球龄:" w="1030" h="60" x="760" y="420" />					
+			
+			<num2 text="" w="1030" h="60" x="620" y="300" />
+			<position2 text="" w="1030" h="60" x="620" y="330" />	
+			<born2 text="" w="1030" h="60" x="620" y="360" />	
+			<debut2 text="" w="1030" h="60" x="620" y="390" />				
+			<height2 text="" w="1030" h="60" x="620" y="420" />	
+			<weight2 text="" w="1030" h="60" x="810" y="300" />	
+			<hometown2 text="" w="1030" h="60" x="810" y="330" />	
+			<highschool2 text="" w="1030" h="60" x="810" y="360" />	
+			<college2 text="" w="1030" h="60" x="810" y="390" />	
+			<exp2 text="" w="1030" h="60" x="810" y="420" />	
+						
+			<name2 text="Example Name2" w="200" h="60" x="480" y="250" font="微软雅黑"
+					fontsize="20"  />
+			<team2 text="Knight" w="200" h="60" x="25" y="190" font="微软雅黑"
+					fontsize="20"  />
+			</labels>
+			
+			<buttons>
+			<btn1 text="btn1" w="30" h="30" x="238" y="280" path="img/player/compare/compare.jpg" />	
+			<btn2 text="btn2" w="30" h="30" x="238" y="330" path="img/player/compare/compare.jpg"/>	
+			<search text="Search" w="142" h="43" x="88" y="397" path="img/player/compare/compbtn.png"/>
+			
+			</buttons>
+			
+			<textfields>
+			<field1 w="180" h="30" x="58" y="280" />
+			<field2 w="180" h="30" x="58" y="330" />
+			</textfields>
+		</panel>
+		
+		
+		<panel className="ui.player.compare.ComparePanel" width="940" height="511"
+			x="0" y="0" bg="img/player/compare.png">
+			<labels>
+			<name1 text="" w="1030" h="60" x="30" y="0" />	
+			<name2 text="" w="1030" h="60" x="250" y="0" />	
+			<chart1 text="" w="440" h="330" x="-40" y="100" />	
+			<chart2 text="" w="256" h="192" x="590" y="80" />	
+			<chart3 text="" w="256" h="192" x="590" y="312" />
+			</labels>
+		</panel>
+		
+		
+        <panel className="ui.match.stat.MatchDetail" width="940" height="511"
+               x="0" y="0">
+               <labels>
+              <info text="姓名" w="1300" h="60" x="50" y="10"  font="微软雅黑"
+					fontsize="15"  />
+              
+              <basic text="Home Team Basic Data" w="230" h="80" x="10" y="70" font="微软雅黑"
+					fontsize="15"  />
+              <advanced text="Home Team Advanced Data" w="230" h="80" x="240" y="70" font="微软雅黑"
+					fontsize="15"  />
+              <basic2 text="Guest Team Basic Data" w="230" h="80" x="470" y="70" font="微软雅黑"
+					fontsize="15"  />
+              <advanced2 text="Guest Team Advanced Data" w="230" h="80" x="700" y="70" font="微软雅黑"
+					fontsize="15"  />
+               
+               </labels>
+               <tablepane className="ui.match.stat.MatchPlayerTabel" width="940"
+				height="340" x="0" y="166">
+				<columnnames>
+					<columnname name="SEASON" />
+					<columnname name="TEAM" />
+					<columnname name="G" />
+					<columnname name="GS" />
+					<columnname name="MIN" />
+					<columnname name="FG" />					
+					<columnname name="FGA%" />
+					<columnname name="FG3" />					
+					<columnname name="FG3%" />
+					<columnname name="FG2" />					
+					<columnname name="FG2%" />
+					<columnname name="EFG%" />
+					<columnname name="FT" />
+					<columnname name="FT%" />
+					<columnname name="TRB" />
+					<columnname name="AST" />
+					<columnname name="STL" />
+					<columnname name="BLK" />
+				</columnnames>
+			</tablepane>
+        </panel>
+	</homeframe>
+</nba>
